@@ -1,0 +1,100 @@
+---
+title: "TriviaRush: Real-Time Multiplayer Trivia Game"
+publishedAt: "2024-09-05"
+summary: "Development of a fast, real-time multiplayer trivia game using Expo (React Native) for the frontend and Nest.js for the backend, with seamless Socket.IO integration for real-time gameplay."
+images:
+  - "/images/projects/trivia/cover-01.png"
+  - "/images/projects/trivia/cover-02.png"
+team:
+  - name: "Gideon Oni-Becsen"
+    role: "Lead Developer"
+    avatar: "/images/avatar.png"
+    linkedIn: "https://www.linkedin.com/in/gideon-oni-becsen-880917226/"
+  - name: "Melody B. Oni-Becsen"
+    role: "QA/Test"
+    avatar: "/images/projects/trivia/girlie.png"
+    linkedIn: "#"
+---
+
+## Overview
+
+TriviaRush is a real-time multiplayer trivia game where players compete in live trivia challenges, collect game rewards, and build their social gaming network. The project was developed using **React Native (Expo)** for the mobile app and **Nest.js** for the backend, with **Socket.IO** for real-time event handling. The system supports **Google Authentication**, **secure user settings storage**, and **player statistics tracking**.
+
+This project showcases my expertise in **Next.js, React Native, and Nest.js**, emphasizing scalable architecture, real-time WebSocket communication, and optimized backend services.
+
+## Key Features
+
+### 🎮 **Real-Time Multiplayer Trivia**
+- Players can join game rooms and compete in **live trivia matches**.
+- **Socket.IO integration** ensures seamless real-time event updates.
+
+### ⚡ **Efficient WebSocket Event Handling**
+- Batch processing for response submissions to handle **millions of concurrent events**.
+- Mutex locks and Redis caching to **prevent duplicate actions** (e.g., duplicate game rooms).
+
+### 🔐 **Authentication & Security**
+- **Google Authentication** integration.
+- **JWT & Passport-based authentication** for secure API access.
+- Device-based authentication restrictions with a **"multiple devices allowed"** setting.
+
+### 🛠 **Dynamic In-App Settings**
+- Users can **customize their trivia experience**, including:
+  - **Game preferences** (topics, difficulty levels).
+  - **Sound settings** (background music, sound effects).
+  - **Account security** (2FA, email change requests).
+  - **Social connections** (adding game pals for frequent matches).
+- Secure settings storage via **Expo SecureStore** and server synchronization.
+
+### 📊 **Player Stats & Leaderboard**
+- Players' **scores, response time, and fastest answers** are stored in **MySQL (Prisma ORM)**.
+- The server computes **leaderboard rankings** in real-time and emits updates via WebSockets.
+
+### 🚀 **Optimized Backend & Database Design**
+- Built with **Nest.js**, using **Prisma ORM** with **MySQL**.
+- **Redis caching** improves performance for frequently accessed data.
+- WebSocket events **batch processed efficiently** to reduce database write operations.
+
+## Technologies Used
+
+### **Frontend (Expo - React Native)**
+- **React Native (Expo 51)**: For a smooth cross-platform mobile experience.
+- **Socket.IO Client**: For real-time communication.
+- **NativeWind & React Native Paper**: For styling and UI components.
+- **Google Authentication**: For secure sign-ins.
+- **TypeScript**: For a strongly-typed, maintainable codebase.
+
+### **Backend (Nest.js)**
+- **Nest.js**: Modular and scalable backend framework.
+- **Socket.IO Server**: Handles real-time multiplayer events.
+- **Prisma ORM**: For efficient MySQL database management.
+- **Redis**: For caching frequently accessed data.
+- **Passport.js & JWT**: For authentication and authorization.
+
+## Challenges and Learnings
+
+### **Handling Large-Scale Real-Time Events**
+One of the biggest challenges was ensuring **efficient real-time event handling**. With potentially millions of simultaneous players, WebSocket events needed to be optimized. This was solved by:
+- **Batch processing player responses** before database writes.
+- **Using Redis** to cache leaderboard data instead of constantly querying MySQL.
+- **Mutex locks** to prevent duplicate WebSocket event handling.
+
+### **Ensuring Data Consistency Across Devices**
+With the **"multiple devices allowed"** setting, ensuring **user session validity** was crucial. The backend was designed to:
+- **Limit simultaneous logins** if the setting was disabled.
+- Track active sessions and revoke **old device sessions** upon new logins.
+
+### **Designing a Scalable Game Room System**
+To prevent **duplicate rooms**, a **Redis-based locking mechanism** was implemented. If multiple users attempted to create the same room, the system **ensured only one instance was created**.
+
+## Outcome
+
+TriviaRush is now fully optimized for **real-time multiplayer gameplay**, handling concurrent players **efficiently and securely**. This project demonstrates my **full-stack capabilities**, particularly in:
+- **Building real-time React Native apps with WebSockets.**
+- **Optimizing Nest.js backend for high-performance gaming applications.**
+- **Designing secure authentication & settings management systems.**
+
+This experience solidifies my expertise in **Next.js, React Native, and Nest.js**, making me a strong candidate for real-time app development roles.
+
+---
+
+🚀 **Want to discuss this project? Let's connect!**  

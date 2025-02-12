@@ -7,6 +7,7 @@ import { Footer, Header, RouteGuard } from "@/components";
 import { baseURL, effects, style } from "@/app/resources";
 
 import { Inter } from "next/font/google";
+import { Nunito } from 'next/font/google';
 import { Source_Code_Pro } from "next/font/google";
 
 import { person, home } from "@/app/resources/content";
@@ -45,16 +46,21 @@ const primary = Inter({
   display: "swap",
 });
 
+const tertiary = Nunito({
+  variable: '--font-tertiary',
+  subsets: ['latin'],
+  display: 'swap'
+});
+
 type FontConfig = {
   variable: string;
 };
 
 /*
-	Replace with code for secondary and tertiary fonts
+	Replace with code for secondary font
 	from https://once-ui.com/customize
 */
 const secondary: FontConfig | undefined = undefined;
-const tertiary: FontConfig | undefined = undefined;
 /*
  */
 

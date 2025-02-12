@@ -1,0 +1,126 @@
+---
+title: "Harpiee: A Next-Gen Social Media App"
+publishedAt: "2025-01-01"
+summary: "Development of Harpiee, a happiness-focused social media platform built with React Native (Expo) for mobile, Next.js for web, and Nest.js for backend services. The project includes real-time content engagement, video compression, AWS cloud infrastructure, and robust analytics."
+images:
+  - "/images/projects/harpiee/cover-01.png"
+  - "/images/projects/harpiee/cover-02.png"
+team:
+  - name: "Gideon Oni-Becsen"
+    role: "Lead Developer & Designer"
+    avatar: "/images/avatar.png"
+    linkedIn: "https://www.linkedin.com/in/your-profile/"
+---
+
+## Overview
+
+**Harpiee** is a **next-generation social media platform** designed to foster happiness and meaningful connections. It allows users to share **micro gratitude posts, engage with an interactive feed, and track engagement statistics.**  
+
+As the **Lead Developer & Designer**, I built Harpiee from the ground up, focusing on **scalability, performance, and a seamless user experience** across mobile and web platforms. The app was developed using:
+- **React Native (Expo 51)** for the mobile app.
+- **Next.js** for the Harpiee web platform.
+- **Nest.js** for the backend, powered by AWS cloud infrastructure.
+
+Harpiee leverages **AWS S3 for media storage, PostgreSQL on AWS RDS for the database, and Google Cloud Messaging for push notifications**. I also implemented **video compression and optimization on the server side** to ensure efficient content delivery.
+
+## Key Features
+
+### 🎭 **Unique Social Engagement Model**
+- Users connect through a **custom relationship system** (beyond 'Follow' or 'Add Friend').
+- Connection types dictate **content visibility rules**, affecting feed dynamics.
+
+### 📊 **Advanced Stats & Analytics**
+- Users can track **impressions, likes, and engagement metrics** for their posts.
+- Data visualization using **charts and interactive UI elements**.
+- Built a **scalable stats API** to handle large datasets efficiently.
+
+### 🎥 **Video Upload, Compression & Optimization**
+- Users can upload **short videos** that are **compressed and optimized** on the backend before being stored on **AWS S3**.
+- Implemented server-side **video compression** using `ffmpeg` to reduce load times while maintaining quality.
+- Optimized video streaming to ensure **smooth playback**.
+- Integration with `ffmpeg-kit-react-native` for efficient **video trimming and processing**.
+
+### 🔔 **Push Notifications & Real-Time Updates**
+- Integrated **Google Cloud Messaging (GCM)** for **real-time push notifications**.
+- Notifications for **likes, comments, and user interactions**.
+
+### 🔐 **Secure Authentication & User Management**
+- **Clerk** for authentication, ensuring **secure user signups & logins**.
+- **OAuth & social logins** for a seamless onboarding experience.
+- Role-based permissions and **data access security**.
+
+### 🏗 **Scalable Backend Infrastructure**
+- **Nest.js** backend hosted on **AWS EC2** (Amazon Linux 2023).
+- **PostgreSQL database on AWS RDS** for reliability and performance.
+- Efficient **query optimization and indexing** for fast API responses.
+- **AWS S3** for cloud storage and optimized **file serving**.
+
+### 📂 **Cloud Storage & Content Management**
+- **AWS S3** for storing **videos, images, and user-generated content**.
+- Optimized storage handling to reduce **bandwidth costs**.
+
+### 🏠 **Responsive & Engaging Web Platform**
+- The **Harpiee website** is built with **Next.js** for speed and SEO.
+- Fully responsive, **allowing users to browse, sign up, and engage** via web.
+- **Server-side rendering (SSR) and static generation (SSG)** for optimal performance.
+
+### 📱 **Cross-Platform App with React Native (Expo)**
+- Built with **Expo 51** for **a smooth, cross-platform experience**.
+- **NativeWind for styling**, ensuring a clean and modern UI.
+- Used **expo-router 3.5** for an intuitive navigation system.
+
+## Tech Stack
+
+### **📱 Mobile (React Native)**
+- **Expo 51 + React Native**: Fast, cross-platform mobile experience.
+- **NativeWind + Tailwind**: Modern styling framework.
+- **ffmpeg-kit-react-native**: Video processing and compression.
+- **expo-image-picker & expo-video**: Media management.
+
+### **🖥️ Web (Next.js)**
+- **Next.js**: Performance-driven, SEO-friendly frontend.
+- **TypeScript**: Strongly-typed and maintainable codebase.
+- **Server-side rendering & caching** for fast load times.
+
+### **⚡ Backend (Nest.js)**
+- **Nest.js + TypeScript**: Scalable and modular backend.
+- **PostgreSQL (Prisma ORM)**: High-performance database management.
+- **Google Cloud Messaging (GCM)**: Push notifications.
+- **AWS S3**: Media storage & processing.
+
+### **☁️ Cloud Infrastructure**
+- **AWS EC2 (Amazon Linux 2023)**: Backend hosting.
+- **AWS RDS (PostgreSQL)**: Scalable database.
+- **AWS S3**: Secure cloud storage.
+- **Google Firestore**: administration and content moderation.
+
+## Challenges & Solutions
+
+### **Optimizing Video Upload & Playback**
+- **Problem:** Large video uploads led to high bandwidth costs and slow load times.
+- **Solution:** Implemented **server-side video compression** using `ffmpeg`, reducing **file sizes by up to 70%** while maintaining high quality.
+
+### **Scalability & Performance**
+- **Problem:** Handling high user activity and engagement tracking.
+- **Solution:** Optimized API performance by **indexing database queries** and using **caching strategies** to reduce server load.
+
+### **Authentication & Security**
+- **Problem:** Managing secure logins and user roles.
+- **Solution:** Used **Clerk for authentication** with OAuth support, ensuring **secure and seamless logins**.
+
+### **Real-Time Notifications & Updates**
+- **Problem:** Ensuring **instant notifications** for likes, comments, and mentions.
+- **Solution:** Integrated **Google Cloud Messaging (GCM)** for **real-time push notifications**.
+
+## Outcome
+
+Harpiee is now **live** on mobile and web, providing a **smooth, engaging social media experience** with a focus on **happiness and creator engagement.**  
+This project demonstrates my expertise in:
+- **Building full-stack applications** using **React Native, Next.js, and Nest.js**.
+- **Optimizing cloud infrastructure** for high-performance applications.
+- **Developing real-time and media-heavy applications** with video compression, analytics, and WebSockets.
+
+---
+
+🚀 **Want to try out Harpiee?**  
+[Live Website](#) | [Google Play Store](#) | [GitHub Repo](#)

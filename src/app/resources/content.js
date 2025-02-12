@@ -1,24 +1,25 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Gideon",
+  lastName: "Oni-Becsen",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  role: "Fullstack Developer (Mobile, Web)",
+  avatar: "/images/avatar.png",
+  location: "Africa/Lagos", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "French"],
 };
 
 const newsletter = {
   display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
+  title: <>Step Into My Build Log</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      Not a newsletter—more like a backstage pass.  
+      I tend to share dev insights, design inspirations, and deep dives into the tech I&apos;m experimenting with.  
+      Stay in the loop, no spam—just cool stuff.
     </>
   ),
 };
@@ -29,34 +30,38 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/gidbecxa",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/gideon-oni-becsen-880917226/",
   },
   {
     name: "X",
     icon: "x",
-    link: "",
+    link: "https://x.com/gbecsen",
   },
   {
     name: "Email",
     icon: "email",
-    link: "mailto:example@gmail.com",
+    link: "mailto:gideonaonibecsen@gmail.com",
   },
 ];
 
 const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Design engineer and builder</>,
+  description: `Welcome to the tech sanctuary of ${person.role}, a ${person.role} who crafts digital experiences that just work.`,
+  headline: <>Software Developer, Designer</>,
   subline: (
     <>
-      I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      Hey there! I'm Gideon—your friendly pro software developer. I feel alive writing{" "}
+      <InlineCode>code</InlineCode>, but I have a soft spot for <InlineCode>design</InlineCode>. 
+      For over seven years, I&apos;ve been on an earnest quest for innovation building sleek mobile apps, powerful web platforms, 
+      and cloud solutions that don&apos;t just function—they feel right.
+      <br />  
+      I think in logic, operate by algorithms, and see the world in pixels. Somehow, I make all work together. 
     </>
   ),
 };
@@ -81,41 +86,38 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        I'm <strong>{person.name}</strong>, a <strong>{person.role}</strong> with over seven years of experience in building sleek mobile apps, powerful web platforms, and scalable cloud solutions.  
+        I blend <InlineCode>design</InlineCode> and <InlineCode>engineering</InlineCode> to create products that don’t just function—they feel right.
       </>
     ),
   },
   work: {
     display: true, // set to false to hide this section
-    title: "Work Experience",
+    title: "What I Do 🚀",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Harpiee",
+        timeframe: "2023 - Present",
+        role: "Lead Developer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Architected and developed Harpiee, a social media platform integrating real-time engagement, video compression, and cloud-based media storage.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Led development across mobile, web, and backend services using <InlineCode>React Native</InlineCode>, <InlineCode>Next.js</InlineCode>, <InlineCode>Nest.js</InlineCode>, and AWS.
           </>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
+          // {
+          //   src: "/images/projects/project-01/cover-01.jpg",
+          //   alt: "Once UI Project",
+          //   width: 16,
+          //   height: 9,
+          // },
         ],
       },
-      {
+      /* {
         company: "Creativ3",
         timeframe: "2018 - 2022",
         role: "Lead Designer",
@@ -130,7 +132,7 @@ const about = {
           </>,
         ],
         images: [],
-      },
+      }, */
     ],
   },
   studies: {
@@ -138,13 +140,13 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "UPI-ONM",
+        description: <>Bachelor's in Telecommunications and Computer Networks</>,
       },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
-      },
+      // {
+      //   name: "Build the Future",
+      //   description: <>Studied online marketing and personal branding.</>,
+      // },
     ],
   },
   technical: {
@@ -152,35 +154,35 @@ const about = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+        title: "Frontend & Mobile",
+        description: <>React Native, Expo, Next.js, Tailwind, TypeScript, React Three Fiber</>,
         // optional: leave the array empty if you don't want to display images
         images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
+          // {
+          //   src: "/images/projects/project-01/cover-02.jpg",
+          //   alt: "Project image",
+          //   width: 16,
+          //   height: 9,
+          // },
+          // {
+          //   src: "/images/projects/project-01/cover-03.jpg",
+          //   alt: "Project image",
+          //   width: 16,
+          //   height: 9,
+          // },
         ],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+        title: "Backend & Cloud",
+        description: <>Nest.js, PostgreSQL, Supabase, AWS (EC2, RDS, S3), WebSockets</>,
         // optional: leave the array empty if you don't want to display images
         images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
+          // {
+          //   src: "/images/projects/project-01/cover-04.jpg",
+          //   alt: "Project image",
+          //   width: 16,
+          //   height: 9,
+          // },
         ],
       },
     ],
