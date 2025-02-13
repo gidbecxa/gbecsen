@@ -1,0 +1,86 @@
+---
+title: "The Art of Scaling: Lessons from Running Live Apps on AWS and Supabase"
+publishedAt: "2025-02-13"
+summary: "Scaling a live application is more than just adding more servers—it's about making smart decisions based on cost, performance, and future growth."
+tag: "Engineering"
+---
+
+Scaling a live application is more than just adding more servers—it's about making smart decisions based on cost, performance, and future growth. Over the past year, I’ve had the opportunity to scale different applications using both **AWS (EC2, RDS, S3)** and **Supabase (PostgreSQL, Storage)**. Each came with its own unique challenges, and through these experiences, I’ve gained insights into when to choose one over the other, what pitfalls to avoid, and how to optimize for performance and cost.
+
+## The Journey of Scaling Live Apps
+
+When I first started working on **Harpiee**, a social media app, I knew that scalability would be a key challenge. With features like **video uploads, impressions tracking, push notifications, and real-time interactions**, we needed an infrastructure that could handle large amounts of data without compromising speed. AWS became the natural choice, allowing us to leverage **EC2 for backend hosting, RDS for database management, and S3 for media storage**.  
+
+On the other hand, for **Sociagram**, a separate social platform, I opted for **Supabase**—a powerful alternative that simplifies backend development with an integrated **PostgreSQL database, authentication, and storage**. The goal was to move away from AWS’s complex infrastructure in favor of something more developer-friendly and cost-effective.
+
+## AWS vs. Supabase: Making the Right Choice
+
+Each platform has its strengths, and the choice between AWS and Supabase largely depends on the scale and needs of the application. Here’s how they compare based on my experience:
+
+<CodeBlock className="my-24"
+    compact
+    codeInstances={[
+        {
+            code: 'const { data, error } = await supabase\n  .from("users")\n  .select("*")\n  .eq("status", "active");',
+            label: 'Supabase Query',
+            language: 'tsx'
+        },
+        {
+            code: 'const client = new S3Client({ region: "us-east-1" });\nawait client.send(new PutObjectCommand({\n  Bucket: "my-app-bucket",\n  Key: "video.mp4",\n  Body: file,\n}));',
+            label: 'AWS S3 Upload',
+            language: 'tsx'
+        }
+    ]}
+    copyButton
+/>
+
+### **When AWS is the Right Choice**  
+✅ You need fine-grained control over servers, storage, and networking.  
+✅ Your app has heavy computational needs (e.g., real-time processing, AI).  
+✅ You expect large-scale traffic and need a robust, enterprise-level solution.  
+✅ You’re prepared to manage infrastructure complexity in exchange for flexibility.  
+
+**Example:** In **Harpiee**, we needed AWS’s flexibility to handle **high-volume video processing**, secure authentication, and push notifications. The trade-off? **More setup complexity and cost.**  
+
+### **When Supabase is the Right Choice**  
+✅ You want a **quick-to-deploy backend** with managed authentication and database.  
+✅ You’re working with a small team and want to avoid DevOps overhead.  
+✅ Your app is still growing, and you need a **cost-effective, serverless** solution.  
+✅ You don’t need highly complex backend configurations.  
+
+**Example:** For **Sociagram**, Supabase allowed me to set up **PostgreSQL, user authentication, and storage in minutes**, making it a perfect choice for a leaner, faster development process.  
+
+## Lessons from Scaling Applications
+
+Over time, I’ve learned that scaling isn’t just about the **backend infrastructure**—it’s also about **writing efficient code, managing data wisely, and optimizing queries**. Here are some key takeaways from my experience:
+
+### 1. **Optimize Your Database Queries**
+   - Poorly written queries can slow down even the most powerful servers.  
+   - In PostgreSQL (both AWS RDS and Supabase), **indexing frequently queried columns** can improve performance significantly.  
+   - Using **pagination** instead of loading large datasets at once can prevent unnecessary load on the database.  
+
+### 2. **Use Caching Strategically**
+   - **Redis or CDN caching** can significantly reduce database load and improve response times.  
+   - For **Harpiee**, caching popular content helped reduce read operations on the database.  
+
+### 3. **Monitor and Optimize Storage Costs**
+   - Storing and serving media (especially videos) can get **expensive fast**.  
+   - AWS S3 lifecycle policies help automatically move older files to **Glacier for cost savings**.  
+   - In Supabase, keeping **image sizes optimized and deleting unused files** prevents unnecessary storage bloat.  
+
+### 4. **Prepare for Traffic Spikes**
+   - **Auto-scaling in AWS** helps handle sudden spikes, but it must be configured properly to avoid excessive costs.  
+   - Supabase, being serverless, handles spikes more efficiently without requiring manual scaling.  
+
+## What’s Next?
+
+The landscape of backend infrastructure is constantly evolving. While AWS provides unparalleled flexibility for large-scale applications, **Supabase is making backend development easier than ever**. Moving forward, I plan to explore **hybrid approaches**, such as:  
+- Using **AWS for intensive computing workloads** and Supabase for **authentication & data storage**.  
+- Experimenting with **edge computing** solutions for faster global delivery.  
+
+## Final Thoughts
+
+Scaling applications isn’t just about choosing the right tech stack—it’s about understanding the trade-offs and making **strategic decisions** based on the app’s needs. Whether you go with AWS for flexibility or Supabase for simplicity, the key is to **balance performance, cost, and maintainability**.  
+
+If you're building an app and wondering how to scale it efficiently, feel free to reach out! 🚀  
+

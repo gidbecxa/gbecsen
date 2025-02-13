@@ -1,0 +1,102 @@
+---
+title: "Building a Social Media App: The Technical and UX Challenges No One Talks About"
+publishedAt: "2025-02-13"
+image: "/images/projects/harpiee/screenshot-6.png"
+summary: "Creating a social media app is more than just coding features—it's about solving complex problems in user engagement, performance, and content moderation."
+tag: "Tech Insights"
+---
+
+Building a social media app sounds exciting, but behind the scenes, it’s a journey filled with technical roadblocks, UX dilemmas, and architectural decisions that can make or break the product. Having worked on platforms like **Harpiee** and **Sociagram**, I’ve faced challenges that go beyond just writing code—issues like content engagement, video compression, real-time interactions, and scaling infrastructure.  
+
+Here’s an inside look at some of the biggest challenges I’ve encountered and the lessons learned along the way.
+
+## The Complexity of User Engagement
+
+A social platform is only as good as its ability to keep users engaged. It’s not just about adding a “Like” button—it’s about **making interactions meaningful**.  
+
+### Questions I Had to Solve:
+- How do you design an engagement system that encourages users to post without overwhelming them?  
+- What’s the right balance between public sharing and private journaling? (A key challenge in Harpiee’s gratitude-sharing feature.)  
+- How do you prevent engagement from feeling forced or gimmicky?  
+
+#### What I Learned:
+Engagement isn’t just a UI problem—it’s a **behavioral problem**. In Harpiee, we added **streak tracking and social sharing**, which encouraged daily participation. But we also had to consider **visibility controls**, allowing users to post publicly or privately. Small choices like this **empower users** while subtly driving retention.
+
+## Handling Media Uploads and Compression at Scale  
+
+From photos to videos, media is at the heart of social platforms. But managing uploads efficiently is a **backend nightmare** if not handled properly.  
+
+### Challenges I Faced:
+- **Storage & Cost:** Users upload tons of media—where do you store it without breaking the bank?  
+- **Performance:** Uncompressed videos can slow down the app, but over-compressing reduces quality.  
+- **Streaming vs. Downloading:** Should videos be streamed on demand or preloaded?  
+
+#### My Approach:
+For Harpiee, we implemented **server-side video compression** using **FFmpeg** before uploading to AWS S3. This reduced file sizes while maintaining quality. In Sociagram, we opted for **Supabase Storage**, which streamlined integration but required optimizing upload speeds.
+
+<CodeBlock className="my-24"
+    compact
+    codeInstances={[
+        {
+            code: 'ffmpeg -i input.mp4 -vcodec libx264 -crf 28 output.mp4',
+            label: 'FFmpeg Compression',
+            language: 'bash'
+        },
+    ]}
+    copyButton
+/>
+
+## The Challenges of Real-Time Notifications  
+
+Keeping users informed in real-time is crucial, but implementing push notifications and live updates requires careful planning.
+
+### Key Issues:
+- How do you send **instant notifications** without draining battery life?  
+- What happens if a user has multiple devices? (Do they get duplicate notifications?)  
+- How do you ensure notifications are actually **relevant** and not annoying?  
+
+#### My Solution:
+- Used **Google Cloud Messaging (GCM)** for efficient push delivery.  
+- Implemented **backend filtering**, so users only get relevant updates.  
+- **Rate-limiting notifications** to prevent spammy behavior.  
+
+This system ensured that users **received important updates** (e.g., when someone interacted with their post) without overwhelming them with constant pings.
+
+## Privacy, Moderation, and the Fine Line Between Freedom and Control  
+
+With user-generated content comes responsibility. Content moderation is **one of the hardest parts of running a social platform**.  
+
+### Key Challenges:
+- Preventing spam and harmful content while **maintaining free expression**.  
+- Implementing **reporting and moderation tools** without overwhelming admins.  
+- Handling **user privacy** (Who can see what? What happens when a user deletes their account?).  
+
+#### Lessons Learned:
+- **Automate where possible**: AI-based moderation can help detect spam, but manual review is still needed.  
+- **Give users control**: Let them choose what they share and with whom.  
+- **Have a clear policy**: Define what’s allowed and make moderation decisions **consistent**.  
+
+## The Infrastructure Question: AWS vs. Supabase  
+
+Choosing the right backend infrastructure is a balancing act between **scalability, cost, and ease of development**.
+
+| Feature           | AWS (Harpiee)        | Supabase (Sociagram) |
+|------------------|--------------------|------------------|
+| **Scalability**  | High (EC2, RDS)     | Good (PostgreSQL) |
+| **Cost**         | More expensive      | Cheaper for startups |
+| **Setup Time**   | Requires more config | Easy to integrate |
+| **Media Storage** | AWS S3             | Supabase Storage |
+
+For **Harpiee**, AWS was the better choice because of **complex video processing** and a need for fine-tuned scaling. But for **Sociagram**, Supabase was a **faster and more cost-effective** solution.
+
+## Final Thoughts: What Every Developer Should Know  
+
+1. **User engagement is an ongoing experiment**—don’t assume your first design will work.  
+2. **Media handling is a backend challenge**—plan your storage, compression, and delivery early.  
+3. **Push notifications must be meaningful**—send only what’s necessary.  
+4. **Privacy and moderation are critical**—think about user safety from day one.  
+5. **Your infrastructure choice matters**—AWS vs. Supabase, Firebase vs. self-hosted, pick based on your app’s future needs.  
+
+Building a social media app is **more than just writing code**—it’s about designing an experience that feels natural, fast, and engaging while solving the unseen challenges of performance, privacy, and scale.  
+
+Would I do it again? Absolutely. But this time, I’d **prepare for these challenges much earlier**. 🚀  
