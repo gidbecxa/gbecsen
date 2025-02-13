@@ -6,7 +6,7 @@ const person = {
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Fullstack Developer (Mobile, Web)",
+  role: "Fullstack Developer & Designer",
   avatar: "/images/avatar.png",
   location: "Africa/Lagos", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "French"],
@@ -17,8 +17,8 @@ const newsletter = {
   title: <>Step Into My Build Log</>,
   description: (
     <>
-      Not a newsletter—more like a backstage pass.  
-      I tend to share dev insights, design inspirations, and deep dives into the tech I&apos;m experimenting with.  
+      Not a newsletter—more like a backstage pass.
+      I tend to share dev insights, design inspirations, and deep dives into the tech I&apos;m experimenting with.
       Stay in the loop, no spam—just cool stuff.
     </>
   ),
@@ -53,15 +53,15 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Welcome to the tech sanctuary of ${person.role}, a ${person.role} who crafts digital experiences that just work.`,
-  headline: <>Software Developer, Designer</>,
+  headline: <>Fullstack Developer, Designer</>,
   subline: (
     <>
       Hey there! I'm Gideon—your friendly pro software developer. I feel alive writing{" "}
-      <InlineCode>code</InlineCode>, but I have a soft spot for <InlineCode>design</InlineCode>. 
-      For over seven years, I&apos;ve been on an earnest quest for innovation building sleek mobile apps, powerful web platforms, 
+      <InlineCode>code</InlineCode>, but I have a soft spot for <InlineCode>design</InlineCode>.
+      For over seven years, I&apos;ve been on an earnest quest for innovation building sleek mobile apps, powerful web platforms,
       and cloud solutions that don&apos;t just function—they feel right.
-      <br />  
-      I think in logic, operate by algorithms, and see the world in pixels. Somehow, I make all work together. 
+      <br />
+      I think in logic, operate by algorithms, and see the world in pixels. Somehow, I make all work together.
     </>
   ),
 };
@@ -78,16 +78,21 @@ const about = {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false,
     link: "https://cal.com",
+  },
+  resume: {
+    display: true,
+    link: "https://github.com/gidbecxa",
   },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        I'm <strong>{person.name}</strong>, a <strong>{person.role}</strong> with over seven years of experience in building sleek mobile apps, powerful web platforms, and scalable cloud solutions.  
+        I'm <strong>{person.name}</strong>, a <strong>{person.role}</strong> with over seven years of experience in building sleek mobile apps, powerful web platforms, and scalable cloud solutions.
         I blend <InlineCode>design</InlineCode> and <InlineCode>engineering</InlineCode> to create products that don’t just function—they feel right.
+        My passion lies in transforming complex ideas into user-centered, innovative solutions that deliver high-quality, groundbreaking results.
       </>
     ),
   },
@@ -97,14 +102,14 @@ const about = {
     experiences: [
       {
         company: "Harpiee",
-        timeframe: "2023 - Present",
+        timeframe: "May 2024 - Present",
         role: "Lead Developer",
         achievements: [
           <>
             Architected and developed Harpiee, a social media platform integrating real-time engagement, video compression, and cloud-based media storage.
           </>,
           <>
-            Led development across mobile, web, and backend services using <InlineCode>React Native</InlineCode>, <InlineCode>Next.js</InlineCode>, <InlineCode>Nest.js</InlineCode>, and AWS.
+            Led development across mobile, web, and backend services using <InlineCode>Expo/React Native</InlineCode>, <InlineCode>Nest.js</InlineCode>, <InlineCode>AWS</InlineCode>, and <InlineCode>Next.js</InlineCode>,
           </>,
         ],
         images: [
@@ -117,22 +122,57 @@ const about = {
           // },
         ],
       },
-      /* {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+      {
+        company: "DMORAU",
+        timeframe: "February 2023 - October 2024",
+        role: "Fullstack Developer, DevOps",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Spearheaded the development of DMORAU, a dating app that reached the top 10 in the social apps category on the Google Play Store at launch.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Integrated essential AWS services such as S3, EC2, RDS, and IAM for a robust and scalable server-side infrastructure.
+          </>,
+          <>
+            Implemented innovative features like manual profile verification via video calls, locked private conversations, and in-app gifting to enhance user trust and engagement.
           </>,
         ],
         images: [],
-      }, */
+      },
+      {
+        company: "Grow by Aisely",
+        timeframe: "June 2022 - June 2023",
+        role: "Director & Lead Instructor",
+        achievements: [
+          <>
+            Designed and delivered high-quality course programs and projects for a developer bootcamp, helping learners become proficient software developers through a project-based learning system.
+          </>,
+          <>
+            Generated over 1 million FCFA in revenue and secured $7,000 in angel investments for the bootcamp.
+          </>,
+          <>
+            Mentored learners by providing guidance and support to help them overcome challenges while building functional software solutions.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Aisely",
+        timeframe: "December 2020 - June 2023",
+        role: "Fullstack Developer & Team Lead",
+        achievements: [
+          <>
+            Led a startup team of developers and designers to build Aisely, a document automation app that gained users both locally and internationally.
+          </>,
+          <>
+            Successfully deployed two social media apps (Harplee and Sociagram) and two mobile games (TriviaRush and Messbites).
+          </>,
+          <>
+            Designed and deployed two e-commerce websites for international stores, featuring product galleries valued at over €100,000 each.
+          </>,
+        ],
+        images: [],
+      },
     ],
   },
   studies: {
@@ -140,13 +180,13 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "UPI-ONM",
-        description: <>Bachelor's in Telecommunications and Computer Networks</>,
+        name: "Université Polytechnique Internationale - Dr. Obiang Nguema Mbasogo",
+        description: <>Bachelor's in Computer Networks and Telecommunications</>,
       },
-      // {
-      //   name: "Build the Future",
-      //   description: <>Studied online marketing and personal branding.</>,
-      // },
+      {
+        name: "Centre Béninois des Langues Étrangères",
+        description: <>A2, B1 & B2 certifications in French Language.</>,
+      },
     ],
   },
   technical: {
@@ -155,7 +195,7 @@ const about = {
     skills: [
       {
         title: "Frontend & Mobile",
-        description: <>React Native, Expo, Next.js, Tailwind, TypeScript, React Three Fiber</>,
+        description: <>React Native, Expo, Next.js, Tailwind, TypeScript, React, Kotlin</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           // {
@@ -174,7 +214,7 @@ const about = {
       },
       {
         title: "Backend & Cloud",
-        description: <>Nest.js, PostgreSQL, Supabase, AWS (EC2, RDS, S3), WebSockets</>,
+        description: <>Nest.js, Express.js, PostgreSQL, MySQL, AWS (EC2, RDS, S3, IAM etc.), Google Cloud/Firebase, Supabase, Node.js</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           // {
@@ -184,6 +224,11 @@ const about = {
           //   height: 9,
           // },
         ],
+      },
+      {
+        title: "UI/UX Design",
+        description: <>Figma, Adobe Illustrator, Adobe Photoshop, User-Centered Design, Wireframing, Prototyping</>,
+        images: [],
       },
     ],
   },
