@@ -322,7 +322,7 @@ const gallery = {
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/screenshot-sg-03.png",
+      src: "/images/gallery/screenshot-sg-02.png",
       alt: "image",
       orientation: "vertical",
     },
