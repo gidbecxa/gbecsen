@@ -257,74 +257,139 @@ const gallery = {
   // Images from https://pexels.com
   images: [
     {
-      src: "/images/gallery/img-01.jpg",
+      src: "/images/gallery/screenshot-h-01.png",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/img-02.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-03.jpg",
+      src: "/images/gallery/screenshot-h-03.png",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/img-04.jpg",
+      src: "/images/gallery/screenshot-mb-01.jpeg",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/img-05.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-06.jpg",
+      src: "/images/gallery/screenshot-tr-02.png",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/img-07.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-08.jpg",
+      src: "/images/gallery/screenshot-tr-04.png",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/img-09.jpg",
+      src: "/images/gallery/screenshot-mb-02.png",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/img-10.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-11.jpg",
+      src: "/images/gallery/screenshot-tr-05.png",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/img-12.jpg",
+      src: "/images/gallery/screenshot-tr-06.png",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/screenshot-mb-04.png",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/img-13.jpg",
+      src: "/images/gallery/screenshot-tr-07.png",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/screenshot-tr-03.png",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/screenshot-mb-03.png",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/img-14.jpg",
+      src: "/images/gallery/screenshot-sg-01.png",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/screenshot-sg-03.png",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/screenshot-esgi-02.png",
       alt: "image",
       orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/screenshot-sg-04.png",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/screenshot-sg-05.png",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/screenshot-esgi-03.png",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/screenshot-esgi-04.png",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/screenshot-sg-06.png",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/screenshot-sg-07.png",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/screenshot-esgi-05.png",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/screenshot-esgi-06.png",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/screenshot-misc-01.png",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/screenshot-misc-02.png",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/screenshot-misc-03.png",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/screenshot-misc-04.png",
+      alt: "image",
+      orientation: "vertical",
     },
   ],
 };
