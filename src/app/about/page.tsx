@@ -153,7 +153,7 @@ export default function About() {
                 marginBottom="m"
                 vertical="center"
               >
-                <Icon paddingLeft="12" name="calendar" onBackground="brand-weak" />
+                <Icon paddingLeft="12" name="document" onBackground="brand-weak" />
                 <Flex paddingX="8">Get my resume</Flex>
                 <IconButton
                   href={about.resume.link}
@@ -174,7 +174,7 @@ export default function About() {
               {person.role}
             </Text>
             {social.length > 0 && (
-              <Flex className={styles.blockAlign} paddingTop="20" paddingBottom="8" gap="8" wrap horizontal="center" fitWidth>
+              <Flex className={styles.blockAlign} paddingTop="20" paddingBottom="8" gap="12" wrap horizontal="center" fitWidth>
                 {social.map(
                   (item) =>
                     item.link && (

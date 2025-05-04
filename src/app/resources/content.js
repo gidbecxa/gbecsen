@@ -83,7 +83,7 @@ const about = {
   },
   resume: {
     display: true,
-    link: "https://github.com/gidbecxa",
+    link: "https://docs.google.com/document/d/1QosshOreEpUMsNaclq4VKdvF9lF1pOmGxRPFKZN8O1k/edit?usp=sharing",
   },
   intro: {
     display: true,
@@ -257,11 +257,6 @@ const gallery = {
   // Images from https://pexels.com
   images: [
     {
-      src: "/images/gallery/screenshot-h-01.png",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
       src: "/images/gallery/screenshot-h-03.png",
       alt: "image",
       orientation: "vertical",
@@ -277,7 +272,17 @@ const gallery = {
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/screenshot-tr-04.png",
+      src: "/images/gallery/screenshot-h-04.png",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/screenshot-h-05.png",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/screenshot-h-02.png",
       alt: "image",
       orientation: "vertical",
     },
@@ -317,6 +322,11 @@ const gallery = {
       orientation: "horizontal",
     },
     {
+      src: "/images/gallery/screenshot-h-01.png",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
       src: "/images/gallery/screenshot-sg-01.png",
       alt: "image",
       orientation: "vertical",
@@ -342,17 +352,12 @@ const gallery = {
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/screenshot-esgi-03.png",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
       src: "/images/gallery/screenshot-esgi-04.png",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/screenshot-sg-06.png",
+      src: "/images/gallery/screenshot-tr-04.png",
       alt: "image",
       orientation: "vertical",
     },
@@ -372,6 +377,11 @@ const gallery = {
       orientation: "horizontal",
     },
     {
+      src: "/images/gallery/screenshot-sg-06.png",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
       src: "/images/gallery/screenshot-misc-01.png",
       alt: "image",
       orientation: "vertical",
@@ -381,15 +391,20 @@ const gallery = {
       alt: "image",
       orientation: "vertical",
     },
-    {
-      src: "/images/gallery/screenshot-misc-03.png",
-      alt: "image",
-      orientation: "vertical",
-    },
+    // {
+    //   src: "/images/gallery/screenshot-misc-03.png",
+    //   alt: "image",
+    //   orientation: "vertical",
+    // },
     {
       src: "/images/gallery/screenshot-misc-04.png",
       alt: "image",
       orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/screenshot-esgi-03.png",
+      alt: "image",
+      orientation: "horizontal",
     },
   ],
 };
