@@ -191,7 +191,7 @@ const about = {
   },
   technical: {
     display: true, // set to false to hide this section
-    title: "Technical skills",
+    title: "Skills",
     skills: [
       {
         title: "Frontend & Mobile",
@@ -228,6 +228,11 @@ const about = {
       {
         title: "UI/UX Design",
         description: <>Figma, Adobe Illustrator, Adobe Photoshop, User-Centered Design, Wireframing, Prototyping</>,
+        images: [],
+      },
+      {
+        title: "Soft Skills",
+        description: <>Communication, Teamwork, Empathy, Adaptability, Leadership, Problem-Solving,Creativity, Attention to detail, Negotiation</>,
         images: [],
       },
     ],
