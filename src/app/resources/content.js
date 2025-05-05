@@ -83,7 +83,7 @@ const about = {
   },
   resume: {
     display: true,
-    link: "https://drive.google.com/file/d/16VB_5zK5Y69zz2nxJ1GRFX6j62TAdgka/view?usp=sharing",
+    link: "https://drive.google.com/file/d/1xSJLKtga66pHX2AonkoeNvTkqtWv9oCp/view?usp=sharing",
   },
   intro: {
     display: true,
@@ -327,12 +327,12 @@ const gallery = {
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/screenshot-sg-01.png",
+      src: "/images/gallery/screenshot-misc-04.png",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/screenshot-sg-02.png",
+      src: "/images/gallery/screenshot-dm-01.png",
       alt: "image",
       orientation: "vertical",
     },
@@ -342,12 +342,12 @@ const gallery = {
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/screenshot-sg-04.png",
+      src: "/images/gallery/screenshot-dm-03.png",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/screenshot-sg-05.png",
+      src: "/images/gallery/screenshot-dm-04.png",
       alt: "image",
       orientation: "vertical",
     },
@@ -362,7 +362,7 @@ const gallery = {
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/screenshot-sg-07.png",
+      src: "/images/gallery/screenshot-sg-01.png",
       alt: "image",
       orientation: "vertical",
     },
@@ -375,6 +375,26 @@ const gallery = {
       src: "/images/gallery/screenshot-esgi-06.png",
       alt: "image",
       orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/screenshot-sg-02.png",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/screenshot-sg-04.png",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/screenshot-sg-05.png",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/screenshot-sg-07.png",
+      alt: "image",
+      orientation: "vertical",
     },
     {
       src: "/images/gallery/screenshot-sg-06.png",
@@ -391,13 +411,23 @@ const gallery = {
       alt: "image",
       orientation: "vertical",
     },
-    // {
-    //   src: "/images/gallery/screenshot-misc-03.png",
-    //   alt: "image",
-    //   orientation: "vertical",
-    // },
     {
-      src: "/images/gallery/screenshot-misc-04.png",
+      src: "/images/gallery/screenshot-dm-02.png",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/screenshot-dm-05.png",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/screenshot-dm-07.png",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/screenshot-dm-08.png",
       alt: "image",
       orientation: "vertical",
     },
