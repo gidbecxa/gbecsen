@@ -83,7 +83,7 @@ const about = {
   },
   resume: {
     display: true,
-    link: "https://drive.google.com/file/d/1bDfGQI-z2WBfM2DbvtJ54Qf0cbjVsgmQ/view?usp=sharing",
+    link: "https://drive.google.com/file/d/16VB_5zK5Y69zz2nxJ1GRFX6j62TAdgka/view?usp=sharing",
   },
   intro: {
     display: true,
