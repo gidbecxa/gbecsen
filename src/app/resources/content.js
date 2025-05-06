@@ -90,8 +90,8 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        I'm <strong>{person.name}</strong>, a <strong>{person.role}</strong> with over seven years of experience in building sleek mobile apps, powerful web platforms, and scalable cloud solutions.
-        I blend <InlineCode>design</InlineCode> and <InlineCode>engineering</InlineCode> to create products that don’t just function—they feel right.
+        I'm <strong>{person.name}</strong>, a <strong>{person.role}</strong> with over seven years of experience in crafting scalable web, mobile, and game applications.
+        Specializing in <InlineCode>fullstack development</InlineCode> and <InlineCode>game design</InlineCode>, I create intuitive, high-performance solutions that delight users.
         My passion lies in transforming complex ideas into user-centered, innovative solutions that deliver high-quality, groundbreaking results.
       </>
     ),
@@ -101,74 +101,58 @@ const about = {
     title: "What I Do 🚀",
     experiences: [
       {
-        company: "Harpiee",
-        timeframe: "May 2024 - Present",
-        role: "Lead Developer",
-        achievements: [
-          <>
-            Architected and developed Harpiee, a social media platform integrating real-time engagement, video compression, and cloud-based media storage.
-          </>,
-          <>
-            Led development across mobile, web, and backend services using <InlineCode>Expo/React Native</InlineCode>, <InlineCode>Nest.js</InlineCode>, <InlineCode>AWS</InlineCode>, and <InlineCode>Next.js</InlineCode>,
-          </>,
-        ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          // {
-          //   src: "/images/projects/project-01/cover-01.jpg",
-          //   alt: "Once UI Project",
-          //   width: 16,
-          //   height: 9,
-          // },
-        ],
-      },
-      {
-        company: "DMORAU",
-        timeframe: "February 2023 - October 2024",
-        role: "Fullstack Developer, DevOps",
-        achievements: [
-          <>
-            Spearheaded the development of DMORAU, a dating app that reached the top 10 in the social apps category on the Google Play Store at launch.
-          </>,
-          <>
-            Integrated essential AWS services such as S3, EC2, RDS, and IAM for a robust and scalable server-side infrastructure.
-          </>,
-          <>
-            Implemented innovative features like manual profile verification via video calls, locked private conversations, and in-app gifting to enhance user trust and engagement.
-          </>,
-        ],
-        images: [],
-      },
-      {
-        company: "Grow by Aisely",
-        timeframe: "June 2022 - June 2023",
-        role: "Director & Lead Instructor",
-        achievements: [
-          <>
-            Designed and delivered high-quality course programs and projects for a developer bootcamp, helping learners become proficient software developers through a project-based learning system.
-          </>,
-          <>
-            Generated over 1 million FCFA in revenue and secured $7,000 in angel investments for the bootcamp.
-          </>,
-          <>
-            Mentored learners by providing guidance and support to help them overcome challenges while building functional software solutions.
-          </>,
-        ],
-        images: [],
-      },
-      {
         company: "Aisely",
-        timeframe: "December 2020 - June 2023",
+        timeframe: "February 2021 - Mar 2025",
         role: "Fullstack Developer & Team Lead",
         achievements: [
           <>
-            Led a startup team of developers and designers to build Aisely, a document automation app that gained users both locally and internationally.
+            Led a team of five to develop Harpiee, a social media app aiming to be the next viral social app 1 billion users, using <InlineCode>Expo</InlineCode>, <InlineCode>React Native</InlineCode>, <InlineCode>Node.js</InlineCode>, <InlineCode>Nest.js</InlineCode>, <InlineCode>PostgreSQL</InlineCode> and <InlineCode>AWS</InlineCode>, achieving top user ratings.
           </>,
           <>
-            Successfully deployed two social media apps (Harplee and Sociagram) and two mobile games (TriviaRush and Messbites).
+            Built Aisely, a document automation SaaS app for creating, invoices and other transactional documents, that gained users international recognition and ranked top 7 globally on Pioneer startup's leaderboard in 2022.
           </>,
           <>
-            Designed and deployed two e-commerce websites for international stores, featuring product galleries valued at over €100,000 each.
+            Built Color Heist, a hypercasual mobile game, with <InlineCode>Godot</InlineCode> and <InlineCode>GDScript</InlineCode>, implementing dynamic UI and real-time scoring for 5,000+ players.
+          </>,
+          <>
+            Developed a space-themed web3 game, integrating <InlineCode>blockchain</InlineCode> for in-game currency (Crypto Shards), enhancing player engagement by 20%.
+          </>,
+          <>
+            Deployed two e-commerce platforms valued at €100,000+ each, integrating payment APIs with <InlineCode>Kotlin</InlineCode> and optimizing performance by 20%.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "DMORAU",
+        timeframe: "April 2023 - October 2024",
+        role: "Fullstack Developer, UI/UX Designer",
+        achievements: [
+          <>
+            Spearheaded DMORAU, a dating app ranked top-10 on Google Play, using <InlineCode>React Native</InlineCode> and <InlineCode>Node.js</InlineCode> for real-time chat and payment features.
+          </>,
+          <>
+            Optimized backend APIs with <InlineCode>Express.js</InlineCode> and <InlineCode>AWS</InlineCode>, reducing latency by 15% and boosting retention by 20%.
+          </>,
+          <>
+            Designed UI/UX prototypes with <InlineCode>Figma</InlineCode>, iterating based on user feedback to enhance trust and engagement.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Growcampus by Aisely",
+        timeframe: "September 2022 - May 2023",
+        role: "Director & Lead Instructor",
+        achievements: [
+          <>
+            Mentored 50+ students in <InlineCode>JavaScript</InlineCode> and <InlineCode>React</InlineCode>, generating 2M+ FCFA in bootcamp revenue through project-based learning.
+          </>,
+          <>
+            Secured $7,000 in angel investments to expand curriculum, incorporating real-world coding challenges.
+          </>,
+          <>
+            Ranked top-10 in Wema Hackaholics Hackathon (2023), leading students to build functional prototypes.
           </>,
         ],
         images: [],
