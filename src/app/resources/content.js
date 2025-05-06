@@ -179,7 +179,7 @@ const about = {
     skills: [
       {
         title: "Frontend & Mobile",
-        description: <>React Native, Expo, Next.js, Tailwind, TypeScript, React, Kotlin</>,
+        description: <>JavaScript, TypeScript, React, Kotlin React Native, Expo, Next.js, Tailwind CSS</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           // {
@@ -198,7 +198,7 @@ const about = {
       },
       {
         title: "Backend & Cloud",
-        description: <>Nest.js, Express.js, PostgreSQL, MySQL, AWS (EC2, RDS, S3, IAM etc.), Google Cloud/Firebase, Supabase, Node.js</>,
+        description: <>Node.js, Nest.js, Express.js, PostgreSQL, MySQL, AWS, Google Cloud, Firebase, Supabase, Docker, Git</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           // {
